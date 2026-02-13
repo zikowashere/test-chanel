@@ -7,8 +7,8 @@ const clamp = (v: number, min: number, max: number) => Math.min(Math.max(v, min)
 
 const Parallax = ({ item }: { item: ParallaxData }) => {
     const wrapper = useRef<HTMLDivElement>(null)
-    const current = useRef(0.8)
-    const target = useRef(0.8)
+    const current = useRef(0.9)
+    const target = useRef(0.9)
     const raf = useRef(0)
 
     useEffect(() => {

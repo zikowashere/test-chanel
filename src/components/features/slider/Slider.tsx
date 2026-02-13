@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import './slider.scss'
 import { slides } from '../../../models/slider.data'
 import Image from '../../ui/images/Image'
+import Link from '../../ui/links/Link'
 
 
 
@@ -47,7 +48,7 @@ const Slider = () => {
                             <div className="slider__content">
                                 <h2 className="slider__title">{slide.title}</h2>
                                 <p className="slider__description">{slide.description}</p>
-                                <a href="#explore" className="slider__link">Découvrez</a>
+                                <Link href="#explore" className="slider__link">Découvrez</Link>
                             </div>
                             <div className="slider__image-wrapper">
                                 <Image src={slide.image} alt={slide.title} className="slider__image" />

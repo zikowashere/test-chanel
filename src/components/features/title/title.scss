@@ -8,7 +8,6 @@
     text-align: center;
     padding: 40px 20px 20px;
     background-color: $color-primary;
-    gap: 6px;
 
     @media (max-width: $breakpoint-mobile) {
         padding: 24px 16px 12px;
@@ -18,7 +17,6 @@
         font-family: $font-secondary;
         font-size: clamp(18px, 3vw, 36px);
         font-weight: 300;
-        font-style: italic;
         color: $color-secondary;
         letter-spacing: 3px;
         text-transform: uppercase;

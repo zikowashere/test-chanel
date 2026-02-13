@@ -1,9 +1,9 @@
 import './title.scss'
-const Title = () => {
+const Title = ({ title, description }: { title: string, description: string }) => {
     return (
         <div className="title">
-            <h1>Over the Moon</h1>
-            <p> Quatre inconnus se recontrent dans un ascenseur pour la ligne</p>
+            <h1>{title}</h1>
+            <p>{description}</p>
         </div>
     );
 };
