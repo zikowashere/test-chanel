@@ -1,0 +1,48 @@
+@import '../../../styles/variables.scss';
+
+.parallax {
+    position: relative;
+    background-color: $color-primary;
+    padding: 10px 0 120px;
+
+    @media (max-width: $breakpoint-mobile) {
+        padding: 40px 0 60px;
+    }
+
+    &__container {
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        @media (max-width: $breakpoint-mobile) {
+            padding: 0 20px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        will-change: clip-path;
+        clip-path: inset(20% 0 0 0);
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        object-position: center;
+    }
+}
