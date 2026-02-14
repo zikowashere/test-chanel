@@ -1,0 +1,47 @@
+@import '../../../styles/variables.scss';
+
+.btn {
+    font-family: $font-secondary;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    transition: all 0.3s ease;
+
+    &--outline {
+        border: 1px solid $color-fake-white;
+        padding: 10px 25px;
+        margin: 5px auto;
+
+        &:hover {
+            background-color: $color-fake-white;
+            color: black;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 10px;
+            padding: 5px 10px;
+        }
+    }
+
+    &--text {
+        border: none;
+        padding: 0;
+        padding-bottom: 2px;
+        text-align: center;
+
+        &:hover {
+            opacity: 0.7;
+            border-bottom: 1px solid white;
+        }
+
+        @media (max-width: $breakpoint-mobile) {
+            font-size: 8px;
+        }
+    }
+}
