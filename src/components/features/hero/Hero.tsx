@@ -1,6 +1,6 @@
 import Image from "../../ui/images/Image"
 import heroImage from "../../../assets/hero.jpg"
-import './Hero.scss';
+import './hero.scss';
 
 const Hero = () => {
     return (
