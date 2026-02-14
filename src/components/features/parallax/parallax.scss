@@ -1,6 +1,7 @@
 @import '../../../styles/variables.scss';
 
 .parallax {
+    grid-column: 1 / -1;
     position: relative;
     background-color: $color-primary;
     padding: 10px 0 20px;
@@ -11,15 +12,9 @@
 
     &__container {
         margin: 0 auto;
-        padding: 0 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-
-
-        @media (max-width: $breakpoint-mobile) {
-            padding: 0 20px;
-        }
     }
 
     &__item {

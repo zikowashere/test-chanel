@@ -1,8 +1,10 @@
 @import '../../styles/variables.scss';
+@import '../../styles/grid.scss';
 
 .homepage {
 
     &__footer {
+        grid-column: 1 / -1;
         height: 100px;
         background-color: black;
     }

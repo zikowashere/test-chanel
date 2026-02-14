@@ -10,17 +10,18 @@ const HomePage = () => {
     return (
         <>
             <Hero />
-            <Title title="Over the Moon" description="Quatre inconnus se recontrent dans un ascenseur pour la ligne" />
-            <Parallax item={parallaxData?.[0]} />
-            <Slider />
-            <Button href="/shop" variant="outline">Découvrir la collection</Button>
-            <Parallax item={parallaxData?.[1]} />
-            <Title title="Over the Moon" description="Quatre inconnus se recontrent dans un ascenseur pour la ligne" />
-            <Button href="/shop" variant="outline">Découvrir la collection</Button>
+            <div className="grid">
+                <Title title="Over the Moon" description="Quatre inconnus se recontrent dans un ascenseur pour la ligne" />
+                <Parallax item={parallaxData?.[0]} />
+                <Slider />
+                <Button href="/shop" variant="outline">Découvrir la collection</Button>
+                <Parallax item={parallaxData?.[1]} />
+                <Title title="Over the Moon" description="Quatre inconnus se recontrent dans un ascenseur pour la ligne" />
+                <Button href="/shop" variant="outline">Découvrir la collection</Button>
 
-            <div className="homepage__footer">
+                <div className="homepage__footer">
+                </div>
             </div>
-
         </>
     )
 }
